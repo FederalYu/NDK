@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     //定义一个本地方法，方法体由C语言实现
     public static native String getStringFromJni();
 
+    public static native void updateFile(String path);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

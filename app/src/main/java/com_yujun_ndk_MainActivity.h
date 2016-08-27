@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_yujun_ndk_MainActivity_getStringFromJni
   (JNIEnv *, jclass);
 
+/*
+ * Class:     com_yujun_ndk_MainActivity
+ * Method:    updateFile
+ * Signature: (Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_yujun_ndk_MainActivity_updateFile
+  (JNIEnv *, jclass, jstring);
+
 #ifdef __cplusplus
 }
 #endif
